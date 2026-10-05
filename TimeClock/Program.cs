@@ -1,9 +1,12 @@
 ﻿using TimeClock;
 
-Time time1 = new Time(13, 40, 53);
-Time time2 = new Time(18, 55, 32);
-Time time3 = new Time(-9, -27, -5);
+Console.WriteLine("Добави час (1-24):");
+int hours = int.Parse(Console.ReadLine());
+Console.WriteLine("Добави минути (00-59):");
+int minutes = int.Parse(Console.ReadLine());
+Console.WriteLine("Добави секунди (00-59):");
+int seconds = int.Parse(Console.ReadLine());
 
-time1.ShowTime();
-time2.ShowTime();
-time3.ShowTime();
+Time time = new Time(hours, minutes, seconds);
+
+time.ShowTime();
