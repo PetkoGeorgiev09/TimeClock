@@ -10,3 +10,4 @@ int seconds = int.Parse(Console.ReadLine());
 Time time = new Time(hours, minutes, seconds);
 
 time.ShowTime();
+
